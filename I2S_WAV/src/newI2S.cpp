@@ -27,3 +27,7 @@ void I2S_Write(char* buffer,int sizeBuffer) {
     i2s_write_bytes((i2s_port_t)I2S_PORT_0, (const char *)buffer, sizeBuffer, portMAX_DELAY);
 }
 
+void I2S_Uninstall(){
+  i2s_driver_uninstall((i2s_port_t)I2S_PORT_0); //stop & destroy i2s driver
+}
+

@@ -15,3 +15,4 @@
 // 44100Hz, 16bit, stereo
 void I2S_Init();
 void I2S_Write(char* buffer,int sizeBuffer);
+void I2S_Uninstall();
